@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#110C1A" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="حكايات مصوّرة دافئة تُروى بالصوت والصورة." />
+    <title>حكايا</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23110C1A'/%3E%3Cpath d='M38.5 14a17.5 17.5 0 1 0 11.4 30.7A15 15 0 1 1 38.5 14Z' fill='%23F0B35A'/%3E%3Ccircle cx='44' cy='22' r='2.4' fill='%23F5ECDD'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+    />
+    <style>
+      /* Paint the brand background before any JS/CSS arrives — never a white flash. */
+      html, body { background: #110C1A; margin: 0; }
+      html.cms-html, html.cms-html body { background: #F6F5F8; }
+      #boot { position: fixed; inset: 0; display: grid; place-items: center; }
+      #boot span { width: 34px; height: 34px; border-radius: 999px; border: 1.5px solid rgba(240,179,90,.18); border-top-color: rgba(240,179,90,.8); animation: boot-spin 1s linear infinite; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { #boot span { animation-duration: 3s; } }
+    </style>
+  </head>
+  <body>
+    <div id="root"><div id="boot" aria-hidden="true"><span></span></div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
